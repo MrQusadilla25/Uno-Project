@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNO Online</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js" defer></script>
+</head>
+<body>
+  <div id="game-container">
+    <h1>UNO Online</h1>
+    <div id="player-info">
+      <p id="player-name">Player 1</p>
+      <button id="sign-out">Sign Out</button>
+    </div>
+    <div id="profile-tab">
+      <h2>Your Profile</h2>
+      <img id="profile-picture" src="default.jpg" alt="Profile Picture">
+      <p id="user-name">Player 1</p>
+      <button id="change-profile-pic">Change Profile Picture</button>
+      <button id="edit-name">Edit Name</button>
+    </div>
+    <div id="settings-tab">
+      <h2>Settings</h2>
+      <label for="game-difficulty">Game Difficulty (Bots):</label>
+      <select id="game-difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="save-settings">Save Settings</button>
+    </div>
+    <div id="game-board">
+      <div id="hand">
+        <h2>Your Cards</h2>
+        <div id="player-hand"></div>
+      </div>
+      <div id="center-pile">
+        <h2>Top Card</h2>
+        <div id="top-card"></div>
+      </div>
+      <button id="draw-card">Draw Card</button>
+      <button id="play-card">Play Card</button>
+    </div>
+    <button id="create-room">Create Room</button>
+    <button id="join-room">Join Room</button>
+  </div>
+</body>
+</html>

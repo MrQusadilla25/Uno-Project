@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #232526, #414345);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+#game-container {
+  max-width: 1000px;
+  width: 95%;
+  margin: 40px auto;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px #00000080;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  margin: 10px 5px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+/* Profile Tab */
+#profile-tab {
+  background: #2b2b2b;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ff416c;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Settings Tab */
+#settings-tab {
+  background: #2b2b2b;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#settings-tab select {
+  background: #1e1e1e;
+  color: white;
+  padding: 6px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/* Game Board */
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+#hand, #center-pile {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%;
+  margin: 10px 0;
+}
+
+#player-hand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  width: 60px;
+  height: 90px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* Card Colors */
+.card.red { background: #e74c3c; }
+.card.blue { background: #3498db; }
+.card.green { background: #2ecc71; }
+.card.yellow { background: #f1c40f; }
+.card.black { background: #333; }
+
+/* Top Card */
+#top-card {
+  width: 80px;
+  height: 120px;
+  font-size: 22px;
+  border-radius: 8px;
+  margin: 0 auto;
+  box-shadow: 0 0 8px #000000aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Room Buttons */
+#create-room,
+#join-room {
+  display: inline-block;
+  width: calc(50% - 10px);
+  margin-top: 20px;
+}
+
+/* Player Info */
+#player-info {
+  text-align: right;
+  font-size: 14px;
+}
+
+#sign-out {
+  float: right;
+  margin-top: -25px;
+  background: #666;
+}
+
+@media screen and (max-width: 768px) {
+  #game-board {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hand, #center-pile {
+    width: 90%;
+  }
+
+  #create-room,
+  #join-room {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
